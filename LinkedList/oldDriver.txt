@@ -1,0 +1,48 @@
+if __name__ == "__main__":
+    test_list = LinkedList(['test1', 'test2', 'test5'])
+
+    # Test basics
+    print(test_list.pos)
+    print(test_list.get())
+    test_list.forward()
+
+    print(test_list.pos)
+    print(test_list.get())
+    test_list.forward()
+
+    # Test insertion
+    print('===============')
+    test_list.ins('test3')
+    print(test_list.pos)
+    print(test_list.get())
+    test_list.forward()
+
+    # Test editing
+    print('===============')
+    print(test_list.pos)
+    print(test_list.get())
+
+    test_list.edit('test4')
+    print(test_list.pos)
+    print(test_list.get())
+
+    # Test exceptions
+    print('===============')
+    print(test_list.pos)
+    print(test_list.get())
+    try:
+        test_list.edit('test5')
+    except OutOfRangeException:
+        print('Task failed successfully')
+    try:
+        test_list.forward()
+    except OutOfRangeException:
+        print('Task failed successfully')
+
+    #Test resetting
+    print('===============')
+    test_list.reset()
+    print(test_list.get())
+    print(test_list.size)
+
+    input('Press any key')

@@ -1,0 +1,53 @@
+test_dequeue_empty_queue (queueTests.MyTestCase) ... ERROR
+NoneType: None
+
+======================================================================
+ERROR: test_dequeue_empty_queue (queueTests.MyTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\bobby\Documents\CIS152\Python Queue Lab\LabCode\queueTests.py", line 131, in test_dequeue_empty_queue
+    self.assertRaises(QueueEmptyException.QueueEmptyException, my_queue.dequeue())
+  File "c:\Users\bobby\Documents\CIS152\Python Queue Lab\LabCode\Queue.py", line 59, in dequeue
+    raise QueueEmptyException
+QueueEmptyException.QueueEmptyException
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)
+test_enqueue_full_queue (queueTests.MyTestCase) ... ERROR
+NoneType: None
+
+======================================================================
+ERROR: test_enqueue_full_queue (queueTests.MyTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\bobby\Documents\CIS152\Python Queue Lab\LabCode\queueTests.py", line 77, in test_enqueue_full_queue
+    self.assertRaises(QueueFullException, my_queue.enqueue(item))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 816, in assertRaises
+    return context.handle('assertRaises', args, kwargs)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 187, in handle
+    raise TypeError('%s() arg 1 must be %s' %
+TypeError: assertRaises() arg 1 must be an exception type or tuple of exception types
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+test_peek_empty_queue (queueTests.MyTestCase) ... ERROR
+NoneType: None
+
+======================================================================
+ERROR: test_peek_empty_queue (queueTests.MyTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\bobby\Documents\CIS152\Python Queue Lab\LabCode\queueTests.py", line 150, in test_peek_empty_queue
+    self.assertRaises(QueueEmptyException, my_queue.peek())
+  File "c:\Users\bobby\Documents\CIS152\Python Queue Lab\LabCode\Queue.py", line 67, in peek
+    raise QueueEmptyException
+QueueEmptyException.QueueEmptyException
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)

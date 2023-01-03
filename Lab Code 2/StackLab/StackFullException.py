@@ -1,0 +1,2 @@
+class StackFullException(Exception):
+    pass
